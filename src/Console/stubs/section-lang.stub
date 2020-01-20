@@ -1,0 +1,8 @@
+<?php
+
+return [
+    '{{{name}}}'  =>  [
+        'create_page_title'  => 'Create',
+        'edit_page_title'  => 'Edit',
+    ]
+];

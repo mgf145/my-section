@@ -1,0 +1,33 @@
+{
+  "name": "mgh/section",
+  "description": "",
+  "keywords": [
+    "section",
+    "Laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Majid Ghaemifar",
+      "email": "mgh145@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": "^5.7|^5.8|^6.0",
+    "morilog/jalali": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mgh\\Section\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mgh\\Section\\SectionServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}

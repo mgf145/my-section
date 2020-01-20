@@ -1,0 +1,36 @@
+<?php
+
+return [
+
+    "type"      => "dropdown",
+    "name"      => trans('admin.sections.{{{name}}}'),
+    "icon"      => "fa fa-list",
+    "sequence"  => 1,
+//    "badge"     => "{{{name}}}Count",
+    "elements"  => [
+        [
+            "permission"    => "{{{name}}}.{{{name}}}controller.index",
+            "type"          => "link",
+            "name"          => trans('admin.list'),
+            "href"          => action('{{{controllerClass}}}@index'),
+            "sequence"      => 1,
+//            "badge"         => "{{{name}}}Count",
+        ],
+        [
+            "permission"    => "{{{name}}}.{{{name}}}controller.create",
+            "type"          => "link",
+            "name"          => trans('admin.create'),
+            "href"          => action('{{{controllerClass}}}@create'),
+            "sequence"      => 2,
+        ]
+    ]
+
+    /*"permission"    => "{{{name}}}.{{{name}}}controller.index",
+    "type"          => "link",
+    "name"          => trans('admin.sections.{{{name}}}'),
+    "href"          => action('{{{controllerClass}}}@index'),
+    "icon"          => "fa fa-list",
+    "sequence"      => 1,
+    "badge"         => "{{{name}}}Count"*/
+
+];

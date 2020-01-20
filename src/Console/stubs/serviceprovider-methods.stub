@@ -1,0 +1,6 @@
+
+	protected function loadMigration()
+    {
+        $migratePaths = glob(app_path('Http/Controllers/*/database/migrations'));
+        $this->loadMigrationsFrom($migratePaths);
+    }

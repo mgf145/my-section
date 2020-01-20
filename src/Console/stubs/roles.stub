@@ -1,0 +1,17 @@
+<?php
+
+return [
+    '{{{name}}}' => [
+        'title'   => trans('admin.sections.{{{name}}}'),
+        'access' => [
+            '{{{ucFirstname}}}Controller' => [
+                trans('admin.list')   => 'index',
+                trans('admin.create') => ['create', 'store'],
+                trans('admin.edit')   => ['edit', 'update'],
+                trans('admin.delete') => 'destroy',
+            ],
+        ],
+        'onlyByUser' => true,
+
+    ],
+];
